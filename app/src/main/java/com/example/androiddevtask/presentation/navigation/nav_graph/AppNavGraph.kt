@@ -3,7 +3,6 @@ package com.example.androiddevtask.presentation.navigation.nav_graph
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
@@ -12,7 +11,6 @@ import androidx.navigation.compose.composable
 import com.example.androiddevtask.presentation.screens.main.MainScreen
 import com.example.androiddevtask.presentation.screens.main.MainScreenDestination
 import com.example.androiddevtask.presentation.screens.main.MainScreenViewModel
-import com.example.androiddevtask.presentation.screens.splash.SplashScreen
 import com.example.androiddevtask.presentation.screens.splash.SplashScreenDestination
 import com.example.androiddevtask.presentation.screens.splash.SplashScreenViewModel
 
@@ -31,11 +29,9 @@ fun AppNavGraph(
         navController = navHostController,
         startDestination = SplashScreenDestination.route()
     ) {
-
         composable(SplashScreenDestination.route()) {
             val viewModel: SplashScreenViewModel = viewModel()
             viewModel
-            SplashScreen()
         }
         composable(MainScreenDestination.route()) {
             val viewModel: MainScreenViewModel = viewModel()

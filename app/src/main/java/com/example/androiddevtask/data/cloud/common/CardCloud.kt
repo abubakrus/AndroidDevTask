@@ -8,7 +8,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class CardCloud(
     @SerializedName("company")
-    val company: CompanyXData,
+    val companyData: CompanyXData,
     @SerializedName("customerMarkParameters")
     val customerMarkParametersData: CustomerMarkParametersData,
     @SerializedName("mobileAppDashboard")
