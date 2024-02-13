@@ -16,7 +16,6 @@ import com.example.androiddevtask.presentation.theme.ExtraMediumSpacing
 import com.example.androiddevtask.presentation.theme.ExtraSmallSpacing
 import com.example.androiddevtask.presentation.theme.LargeSpacing
 import com.example.androiddevtask.presentation.theme.MediumSpacing
-import com.example.androiddevtask.presentation.theme.White
 
 
 @Composable
@@ -36,14 +35,14 @@ fun TabBar(
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(White),
+                .background(MaterialTheme.colorScheme.background),
         ) {
             if (title != null) Text(
                 modifier = Modifier
                     .padding(top = ExtraMediumSpacing, bottom = ExtraMediumSpacing)
                     .align(Alignment.Center),
                 text = title,
-                style = MaterialTheme.typography.bodyLarge,
+                style = MaterialTheme.typography.titleLarge,
                 color = Blue,
             )
         }

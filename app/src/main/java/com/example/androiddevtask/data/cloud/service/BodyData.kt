@@ -1,6 +1,6 @@
 package com.example.androiddevtask.data.cloud.service
 
-data class QQ(
+data class BodyData(
     val limit: Int = 5,
     val offset: Int = 0
 )
