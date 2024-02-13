@@ -12,6 +12,7 @@ hilt-android = "2.48.1"
 hilt-version = "2.48"
 hiltNavigationCompose = "1.1.0"
 junit = "4.13.2"
+koinAndroidxViewmodel = "3.4.3"
 kotlin-version = "1.9.10"
 coreTestingVersion = "2.2.0"
 kotlinx-coroutines-android = "1.7.3"
@@ -32,6 +33,7 @@ exoPlayer_version = "2.17.1"
 systemuicontroller_version = "0.33.2-alpha"
 media_exoPlayer_version = "1.1.1"
 koin_compose_version = "3.2.0"
+koin = "3.4.3"
 [libraries]
 # Room
 accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist-pager-indicators" }
@@ -45,6 +47,7 @@ ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-junit"
 foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { module = "junit:junit", version.ref = "junit" }
+koin-androidx-viewmodel = { module = "io.insert-koin:koin-androidx-viewmodel", version.ref = "koinAndroidxViewmodel" }
 lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
 lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie-compose" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines-android" }
@@ -97,7 +100,8 @@ kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-pl
 
 
 # Koin
-
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin_compose_version" }
 
 

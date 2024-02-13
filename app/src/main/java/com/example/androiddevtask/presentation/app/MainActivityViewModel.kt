@@ -7,7 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 
-class MainActivityViewModel (
+class MainActivityViewModel(
     private val navigatorManager: NavigatorManager
 ) : ViewModel() {
     init {

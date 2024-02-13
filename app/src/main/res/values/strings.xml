@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AndroidDevTask</string>
     <string name="card_management">Управление картами</string>
+    <string name="point">баллов</string>
+    <string name="cashback">Кэшбэк</string>
+    <string name="level">Уровень</string>
+    <string name="more_details">   Подробнее   </string>
 </resources>

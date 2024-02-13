@@ -27,8 +27,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
@@ -58,24 +57,27 @@ kapt {
 
 dependencies {
 
-//Retrofit
+    //Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
 
-//Coil
+    //Coil
     implementation(libs.coil.compose)
 
-//Coroutines
+    //Coroutines
     implementation(libs.kotlinx.coroutines.android)
 
-    //koin
+    //Koin
     implementation(libs.koin.compose)
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
 
-//Navigation
+    //Navigation
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
-//ExoPlayer
+
+    //ExoPlayer
     implementation(libs.exoPlayer)
     implementation(libs.exoPlayer.core)
     implementation(libs.exoPlayer.ui)

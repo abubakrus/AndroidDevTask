@@ -4,7 +4,6 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.filterNotNull
-import javax.inject.Inject
 
 interface NavigatorManager {
     fun destinationFlow(): Flow<Pair<String, Boolean>>
@@ -13,11 +12,9 @@ interface NavigatorManager {
 }
 
 
-class NavigatorManagerImpl @Inject constructor(
+class NavigatorManagerImpl : NavigatorManager {
 
-) : NavigatorManager {
-
-    private val destinationFlow = MutableStateFlow("" to false)
+    private val destinationFlow = MutableStateFlow(String() to false)
     override fun destinationFlow(): Flow<Pair<String, Boolean>> {
         return destinationFlow.asStateFlow().filterNotNull()
     }
